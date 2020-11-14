@@ -1,0 +1,220 @@
+/* font-family: 'Lobster', cursive; */
+/* font-family: 'Roboto', sans-serif; */
+
+/*****************************
+General
+*****************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*****************************
+Header
+*****************************/
+header {
+    width: 100%;
+}
+
+.logo-container,
+.media-container {
+    width: 50%;
+}
+
+.logo-container {
+    float: left;
+}
+
+.logo {
+    padding: 1.5% 0 0 2%;
+    float: left;
+}
+
+.title {
+    float: right;
+    width: 90%;
+}
+
+.title h1 {
+    font-family: 'Lobster', cursive;
+}
+
+.title p {
+    text-transform: uppercase;
+}
+
+.media-container {
+    float: right;
+    margin-top: 1%;
+}
+
+.media-container ul {
+    text-align: right;
+    padding-right: 5%;
+
+}
+
+.media-container ul li{
+    display: inline-block;
+}
+
+.media-container ul li:nth-child(7) {
+    margin-left: 10px;
+}
+
+/*****************************
+Borders
+*****************************/
+.borders {
+    background:repeating-linear-gradient(
+        45deg,
+        transparent,
+        #999 1px,
+        transparent 1px
+    );
+    margin: 1% 2.5%;
+    width: 95%;
+    height: 2vh;
+    border-radius: 2px;
+}
+
+/*****************************
+Section Header
+*****************************/
+.main-container {
+    width: 100%;
+}
+
+.main-title {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+}
+
+.main-title h2 {
+    font-size: 1.8em;
+}
+
+.main-title p {
+    text-transform: uppercase;
+}
+
+.print {
+    width: 48%;
+    float: right;
+    text-align: right;
+    padding-right: 3%;
+    padding-top: 1.5%;
+}
+
+.choco-img {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.choco-img img {
+    width: 80%;
+}
+
+.description {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.description p {
+    text-indent: 50px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/*****************************
+Recipe List
+*****************************/
+.list-recipe {
+    background-image: url('list-bg.png');
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    background-position: center;
+    width: 80%;
+    margin: 10px 10% 20px;
+    height: 34vh;
+    overflow: hidden;
+}
+
+.container-list div {
+    width: 48%;
+    display: inline-block;
+    padding-top: 0.4%;
+    padding-left: 10%;
+    line-height: 1.6;
+}
+
+input[type=checkbox]:checked+label{
+    text-decoration: line-through;
+}
+
+/*****************************
+Personal info
+*****************************/
+.journalist-info {
+    width: 95%;
+    margin: 0 2.5% 5%;
+    height: auto;
+
+}
+
+.journalist-info div {
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+}
+
+.journalist-info div:nth-child(n+2) {
+    margin-left: 10%;
+}
+
+.journalist-info button {
+    padding: 10px 30px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/*****************************
+Footer
+*****************************/
+footer {
+    width: 90%;
+    margin: 0 5%;
+    position: relative;
+}
+
+.logo-line img {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+}
+
+.logo-line div{
+    border-top: 1px solid #999;
+    width: 100%;
+}
+
+.copyright {
+    margin: 20px 0;
+    text-align: center;
+    color: #999;
+}
